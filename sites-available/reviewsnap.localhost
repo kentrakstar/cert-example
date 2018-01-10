@@ -1,0 +1,12 @@
+server {
+
+       listen   443;
+       server_name reviewsnap.localhost;
+
+       root /Users/kenstipek/src/nginx;
+       index index.html index.htm;
+
+       ssl on;
+       ssl_certificate ./ssl/reviewsnap.localhost/server.crt;
+       ssl_certificate_key ./ssl/reviewsnap.localhost/server.key;
+}
